@@ -1,0 +1,186 @@
+/* Start Rules */
+:root {
+    --in-main-color: #111;
+    --bt-main-color: #610286;
+    --bt-hover-color: #3c0053;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: "system-ui";
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+
+/* End Rules */
+/* Start Head */
+
+.head {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.head h2 {
+    margin-bottom: 10px;
+}
+
+/* End Head */
+/* Start Inputs */
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: var(--in-main-color);
+    margin: 4px 0;
+    border-radius: 6px;
+    padding: 4px;
+    color: white;
+    transition: .5s;
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+/* Start Price */
+
+.inputs .price input{
+    width: 20%;
+}
+
+.inputs .price input:focus {
+    background-color: #000;
+    transform: scale(1);
+}
+
+#total {
+    background-color: #a00d02;
+    padding: 5px 2px;
+    border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+    .price {
+        margin-bottom: 10px;
+    }
+    small {
+        margin-top: 10px;
+    }
+}
+
+#total::before {
+    content: "Total: ";
+}
+
+/* End Price */
+.inputs button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--bt-main-color);
+    color: #fff;
+    transition: .5s;
+    margin: 10px 0;
+}
+
+.inputs button:hover {
+    background-color: var(--bt-hover-color);
+    letter-spacing: 2px;
+}
+
+/* End Inputs */
+/* Start Outputs */
+/* Start Search */
+
+.btn-search {
+    display: flex;
+    gap: 5px;
+}
+.btn-search button ,
+.Delete-All {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--bt-main-color);
+    color: #fff;
+    transition: .5s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-search button:hover,
+.Delete-All:hover {
+    background-color: var(--bt-hover-color);
+    letter-spacing: 1px;
+}
+
+/* End Search */
+/* Start Taple */
+
+@media (max-width: 767px) {
+    .responsive-taple {
+        overflow-y: scroll;
+    }
+}
+table {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    border-spacing: 0;
+}
+
+table thead {
+    background-color: var(--in-main-color);
+}
+
+table th {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+table tbody tr {
+    transition: .5s;
+}
+
+table tbody tr:hover {
+    background-color: var(--in-main-color);
+}
+
+table tbody td {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/* Start Buttons */
+table #update ,
+table #delete {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--bt-main-color);
+    color: #fff;
+    transition: .5s;
+}
+
+table #update:hover ,
+table #delete:hover {
+    background-color: var(--bt-hover-color);
+}
+/* End Buttons */
